@@ -1,7 +1,6 @@
 ---
 
 - hosts: app
-  remote_user: root
   tasks:
   - name: erase package finger
     apt: pkg=finger state=absent
