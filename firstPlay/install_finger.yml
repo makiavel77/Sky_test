@@ -4,4 +4,6 @@
   remote_user: root
   tasks:
   - name: isntall package finger
+    become: yes
+    become_method: sudo
     apt: pkg=finger state=present
