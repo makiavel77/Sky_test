@@ -1,6 +1,6 @@
 ---
 
-- hosts: app
+- hosts: all
   tasks:
   - name: erase package finger
     become: yes
