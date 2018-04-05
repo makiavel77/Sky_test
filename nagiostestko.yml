@@ -1,0 +1,9 @@
+---
+- name: nagiostest
+  hosts: defaults
+  vars_files:
+    - vars/check_nagios_vars.yml
+
+  tasks:
+    - shell:  bash {{ base_path }}/{{ script_nsca_KO }}
+      ignore_errors: yes
