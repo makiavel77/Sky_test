@@ -1,6 +1,6 @@
 ---
 - name: ping
-#  hosts: virtual
+  hosts: virtual
   tasks:
     - shell: /bin/ping 10.140.180.17 -w 5 | grep -o "100% packet loss"
       ignore_errors: yes
