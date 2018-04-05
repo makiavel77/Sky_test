@@ -1,7 +1,7 @@
 ---
 - name: Ansible2Nagios
 
-  hosts: virtual
+#  hosts: virtual
 
   vars_files:
     - vars/check_nagios_vars.yml
