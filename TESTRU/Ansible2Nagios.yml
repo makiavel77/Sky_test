@@ -1,0 +1,17 @@
+---
+- name: Ansible2Nagios
+
+  hosts: all
+
+  vars_files:
+    - vars/check_nagios_vars.yml
+  tasks:
+    - name: check_KO
+      shell:  bash {{ base_path }}/{{ script_nsca_KO }}
+      ignore_errors: yes
+      when: shell_result.stdout == "100% packet loss"
+
+    - name: check_OK
+      shell:  bash {{ base_path }}/{{ script_nsca_OK }}
+      ignore_errors: yes
+      when: shell_result.stdout != "100% packet loss"

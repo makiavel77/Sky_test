@@ -1,0 +1,4 @@
+---
+- hosts: all
+- import_playbook: ping.yml
+- import_playbook: Ansible2Nagios.yml "{{ shell_result }}"

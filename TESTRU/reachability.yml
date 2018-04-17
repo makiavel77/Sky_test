@@ -1,0 +1,12 @@
+---
+- name: hostreach
+
+  hosts: preprod
+
+  tasks:
+    - wait_for:  host=preaolapp1.sky.local port={{ ansible_err_port }} timeout=5
+      ignore_errors: yes
+
+    - debug:
+        msg: "La porta {{ ansible_err_port }} è irraggiungibile"
+
