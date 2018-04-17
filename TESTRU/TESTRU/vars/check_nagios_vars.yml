@@ -1,5 +1,0 @@
-check_nsca_dir: '/usr/local/nagios/libexec/send_nsca'
-check_nsca_cfg: '/usr/local/nagios/etc/send_nsca.cfg'
-base_path: '/data/scripts'
-script_nsca_KO: 'testru.sh'
-script_nsca_OK: 'testru.sh'
