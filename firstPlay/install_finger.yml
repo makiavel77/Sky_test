@@ -6,4 +6,6 @@
   - name: isntall package finger
     become: yes
     become_method: sudo
-    yum: pkg=finger state=present
+    yum:
+      name=finger
+      state=present
