@@ -4,6 +4,6 @@
   remote_user: jboss
   tasks:
   - name: isntall package finger
-    become: yes
-    become_method: sudo
+#    become: yes
+#    become_method: sudo
     apt: pkg=finger state=present
