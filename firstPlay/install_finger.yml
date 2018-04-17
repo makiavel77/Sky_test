@@ -1,6 +1,6 @@
 ---
 
-- hosts: all
+- hosts: app
   remote_user: jboss
   tasks:
   - name: isntall package finger
