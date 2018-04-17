@@ -1,6 +1,0 @@
----
-- import_playbook: ping.yml
-- import_playbook: nagiostestko.yml  
-  when: shell_result.stdout == "100% packet loss"
-- import_playbook: nagiostestok.yml
-  when: shell_result.stdout != "100% packet loss"
