@@ -5,4 +5,6 @@
   - name: erase package finger
     become: yes
     become_method: sudo
-    apt: pkg=finger state=absent
+    yum:
+      name=finger
+      state=absent
