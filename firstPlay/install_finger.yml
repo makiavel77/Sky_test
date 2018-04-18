@@ -1,9 +1,11 @@
 ---
 
-- hosts: app
+- hosts: all
   remote_user: jboss
   tasks:
   - name: isntall package finger
     become: yes
     become_method: sudo
-    apt: pkg=finger state=present
+    yum:
+      name=finger
+      state=present
