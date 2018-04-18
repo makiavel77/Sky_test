@@ -1,0 +1,10 @@
+---
+- hosts: app1
+  vars_files:
+  - vars/file.yml
+  remote_user: jboss
+  tasks:
+    - name: crea file
+      file:
+        path: /tmp/{{ file1 }}
+        state: touch

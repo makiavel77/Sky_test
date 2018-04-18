@@ -1,0 +1,11 @@
+---
+- hosts: app1
+  vars_files:
+    - vars/file.yml
+  remote_user: jboss
+  tasks:
+    - name: lista file
+      shell: ls -l /tmp/{{ file1 }}
+      register: var_list
+    - debug:
+        msg: "{{ var_list.stdout }}"
