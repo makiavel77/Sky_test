@@ -1,3 +1,4 @@
 ---
-- import_playbook: 1.yml
-- import_playbook: 2.yml
+- hosts: all
+  import_playbook: 1.yml
+  import_playbook: 2.yml
