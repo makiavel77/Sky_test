@@ -1,5 +1,4 @@
 ---
-- name: main
-  hosts: all
+- hosts: all
   include: 1.yml
   include: 2.yml
