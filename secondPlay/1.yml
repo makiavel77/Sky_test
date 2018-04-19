@@ -2,7 +2,7 @@
 - hosts: all
   vars_files:
   - vars/file.yml
-  remote_user: jboss
+#  remote_user: jboss
   tasks:
     - name: crea file
       file:
