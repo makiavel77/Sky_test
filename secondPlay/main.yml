@@ -5,6 +5,6 @@
    - vars/file.yml
   
   tasks:
-    - debaug:
+    - debug:
         msg: task1
     - include_tasks: 1.yml
