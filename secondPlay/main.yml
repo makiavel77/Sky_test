@@ -1,4 +1,5 @@
 ---
 - hosts: all
-  - include: 1.yml
-  - include: 2.yml
+    tasks:
+      - include: 1.yml
+      - include: 2.yml
