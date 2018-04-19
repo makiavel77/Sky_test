@@ -1,6 +1,7 @@
 ---
 - name: ciccio
   hosts: all
-    tasks:
-      - include: 1.yml
-      - include: 2.yml
+  vars_files:
+   - vars/file.yml:
+- include: 1.yml
+- include: 2.yml
