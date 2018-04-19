@@ -2,5 +2,9 @@
 - name: ciccio
   hosts: all
   vars_files:
-   - vars/file.yml:
-- include_tasks: 1.yml
+   - vars/file.yml
+  
+  tasks:
+    - debaug:
+        msg: task1
+    - include_tasks: 1.yml
