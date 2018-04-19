@@ -3,5 +3,5 @@
   hosts: all
   vars_files:
    - vars/file.yml:
-- include_tasks: 1.yml
-- include_tasks: 2.yml
+  - include_tasks: 1.yml
+  - include_tasks: 2.yml
