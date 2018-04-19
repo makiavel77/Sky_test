@@ -8,3 +8,4 @@
     - debug:
         msg: task1
     - include_tasks: 1.yml
+    - include_tasks: 2.yml
