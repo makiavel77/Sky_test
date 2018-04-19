@@ -1,5 +1,5 @@
 ---
 - name: crea file
-- file:
-  path: /tmp/{{ file1 }}
+  file:
+  path: /tmp/"{{ file1 }}"
   state: touch
