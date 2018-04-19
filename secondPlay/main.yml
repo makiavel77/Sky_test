@@ -1,5 +1,6 @@
 ---
-- hosts: all
+- name: ciccio
+  hosts: all
     tasks:
       - include: 1.yml
       - include: 2.yml
