@@ -1,8 +1,8 @@
 ---
-- hosts: app1
+- hosts: all
   vars_files:
     - vars/file.yml
-  remote_user: jboss
+#  remote_user: jboss
   tasks:
     - name: lista file
       shell: ls -l /tmp/{{ file1 }}
