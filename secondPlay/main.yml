@@ -1,4 +1,4 @@
 ---
 - hosts: all
-  include: 1.yml
-  include: 2.yml
+  - include: 1.yml
+  - include: 2.yml
