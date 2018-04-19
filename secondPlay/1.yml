@@ -1,5 +1,5 @@
 ---
-- hosts: app1
+- hosts: all
   vars_files:
   - vars/file.yml
   remote_user: jboss
